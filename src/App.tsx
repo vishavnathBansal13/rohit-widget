@@ -1,14 +1,15 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import "./AuthForm.css";
-import {
-  CategorizeTransactionWidget,
-  PotentialDeductions,
- } from "@rohit23061999/transaction-review-widget";
+
 import { makeSessionToken } from "./helper/makeSessionToken";
 import AddTransactionForm from "./helper/addTransactionForm";
 import { createUser, getAccessToken } from "./api/api";
 import { toast } from "react-toastify";
-import HistoricalAnalysisWidget from "@rohit23061999/transaction-review-widget/dist/historicalAnalysisWidget/historicalAnalysis";
+import {
+  CategorizeTransactionWidget,
+  HistoricalAnalysisWidget,
+  PotentialDeductions,
+} from "@rohit23061999/transaction-review-widget";
 
 /* ------------------------------------------------------------------ */
 /*  Type definitions                                                  */
@@ -234,7 +235,6 @@ export default function AuthForm() {
       ));
   };
 
-  
   return (
     <div
       className={widgetError || step === "widget" ? "" : "auth-form-container"}
@@ -439,7 +439,7 @@ export default function AuthForm() {
 
       {step === "widget" && (
         <>
-          {widgetError === "No categorized transactions found" ? (
+          {widgetError === "No data found" ? (
             <>
               <div style={{ textAlign: "center", marginTop: "1rem" }}>
                 <button
