@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@rohit23061999/transaction-review-widget": "^0.1.349",
+    "@rohit23061999/transaction-review-widget": "^0.1.352",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
