@@ -3,7 +3,7 @@ import "./AuthForm.css";
 import {
   CategorizeTransactionWidget,
   PotentialDeductions,
-} from "@rohit23061999/transaction-review-widget";
+ } from "@rohit23061999/transaction-review-widget";
 import { makeSessionToken } from "./helper/makeSessionToken";
 import AddTransactionForm from "./helper/addTransactionForm";
 import { createUser, getAccessToken } from "./api/api";
@@ -506,6 +506,7 @@ export default function AuthForm() {
           )}
         </>
       )}
+      {/* <TaxInsightWidget /> */}
     </div>
   );
 }
